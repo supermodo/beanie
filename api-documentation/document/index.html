@@ -1,0 +1,1659 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://roman-right.github.io/beanie/api-documentation/document/">
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-7.2.3">
+    
+    
+      
+        <title>Document - Beanie Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#beanieodmdocuments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Beanie Documentation" class="md-header__button md-logo" aria-label="Beanie Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Beanie Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Document
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/roman-right/beanie/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Beanie Documentation" class="md-nav__button md-logo" aria-label="Beanie Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    Beanie Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/roman-right/beanie/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Tutorial
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tutorial" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorial
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/defining-a-document/" class="md-nav__link">
+        Defining a document
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/initialization/" class="md-nav__link">
+        Initialization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/inserting-into-the-database/" class="md-nav__link">
+        Inserting into the database
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/finding-documents/" class="md-nav__link">
+        Finding documents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/updating-%26-deleting/" class="md-nav__link">
+        Updating & Deleting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/indexes-%26-collection-names/" class="md-nav__link">
+        Indexes & collection names
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/aggregation/" class="md-nav__link">
+        Aggregation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/relations/" class="md-nav__link">
+        Relations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/event-based-actions/" class="md-nav__link">
+        Event-based actions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/cache/" class="md-nav__link">
+        Cache
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/revision/" class="md-nav__link">
+        Revision
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/save-changes/" class="md-nav__link">
+        Save changes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/on-save-validation/" class="md-nav__link">
+        On save validation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/migrations/" class="md-nav__link">
+        Migrations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        API Documentation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          API Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Document
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Document
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#document" class="md-nav__link">
+    Document
+  </a>
+  
+    <nav class="md-nav" aria-label="Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentinsert" class="md-nav__link">
+    Document.insert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentcreate" class="md-nav__link">
+    Document.create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinsert_one" class="md-nav__link">
+    Document.insert_one
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinsert_many" class="md-nav__link">
+    Document.insert_many
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget" class="md-nav__link">
+    Document.get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind_one" class="md-nav__link">
+    Document.find_one
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind_many" class="md-nav__link">
+    Document.find_many
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind" class="md-nav__link">
+    Document.find
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind_all" class="md-nav__link">
+    Document.find_all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentall" class="md-nav__link">
+    Document.all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentreplace" class="md-nav__link">
+    Document.replace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentsave" class="md-nav__link">
+    Document.save
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentsave_changes" class="md-nav__link">
+    Document.save_changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentreplace_many" class="md-nav__link">
+    Document.replace_many
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentupdate" class="md-nav__link">
+    Document.update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentupdate_all" class="md-nav__link">
+    Document.update_all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentdelete" class="md-nav__link">
+    Document.delete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentdelete_all" class="md-nav__link">
+    Document.delete_all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentaggregate" class="md-nav__link">
+    Document.aggregate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentcount" class="md-nav__link">
+    Document.count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentuse_state_management" class="md-nav__link">
+    Document.use_state_management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget_saved_state" class="md-nav__link">
+    Document.get_saved_state
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_cache" class="md-nav__link">
+    Document.init_cache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_fields" class="md-nav__link">
+    Document.init_fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_settings" class="md-nav__link">
+    Document.init_settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_actions" class="md-nav__link">
+    Document.init_actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_model" class="md-nav__link">
+    Document.init_model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget_settings" class="md-nav__link">
+    Document.get_settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget_motor_collection" class="md-nav__link">
+    Document.get_motor_collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinspect_collection" class="md-nav__link">
+    Document.inspect_collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentdict" class="md-nav__link">
+    Document.dict
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query/" class="md-nav__link">
+        Query
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces/" class="md-nav__link">
+        Interfaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Operators
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Operators" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Operators
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators/find/" class="md-nav__link">
+        Find
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators/update/" class="md-nav__link">
+        Update
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fields/" class="md-nav__link">
+        Fields
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code-of-conduct/" class="md-nav__link">
+        Code of conduct
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#document" class="md-nav__link">
+    Document
+  </a>
+  
+    <nav class="md-nav" aria-label="Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentinsert" class="md-nav__link">
+    Document.insert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentcreate" class="md-nav__link">
+    Document.create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinsert_one" class="md-nav__link">
+    Document.insert_one
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinsert_many" class="md-nav__link">
+    Document.insert_many
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget" class="md-nav__link">
+    Document.get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind_one" class="md-nav__link">
+    Document.find_one
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind_many" class="md-nav__link">
+    Document.find_many
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind" class="md-nav__link">
+    Document.find
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentfind_all" class="md-nav__link">
+    Document.find_all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentall" class="md-nav__link">
+    Document.all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentreplace" class="md-nav__link">
+    Document.replace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentsave" class="md-nav__link">
+    Document.save
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentsave_changes" class="md-nav__link">
+    Document.save_changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentreplace_many" class="md-nav__link">
+    Document.replace_many
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentupdate" class="md-nav__link">
+    Document.update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentupdate_all" class="md-nav__link">
+    Document.update_all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentdelete" class="md-nav__link">
+    Document.delete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentdelete_all" class="md-nav__link">
+    Document.delete_all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentaggregate" class="md-nav__link">
+    Document.aggregate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentcount" class="md-nav__link">
+    Document.count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentuse_state_management" class="md-nav__link">
+    Document.use_state_management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget_saved_state" class="md-nav__link">
+    Document.get_saved_state
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_cache" class="md-nav__link">
+    Document.init_cache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_fields" class="md-nav__link">
+    Document.init_fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_settings" class="md-nav__link">
+    Document.init_settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_actions" class="md-nav__link">
+    Document.init_actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinit_model" class="md-nav__link">
+    Document.init_model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget_settings" class="md-nav__link">
+    Document.get_settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentget_motor_collection" class="md-nav__link">
+    Document.get_motor_collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentinspect_collection" class="md-nav__link">
+    Document.inspect_collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentdict" class="md-nav__link">
+    Document.dict
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/roman-right/beanie/edit/master/docs/api-documentation/document.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <p><a name="beanie.odm.documents"></a></p>
+<h1 id="beanieodmdocuments">beanie.odm.documents</h1>
+<p><a name="beanie.odm.documents.Document"></a></p>
+<h2 id="document">Document</h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Document</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span>  <span class="n">UpdateMethods</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>Document Mapping class.</p>
+<p>Fields:</p>
+<ul>
+<li><code>id</code> - MongoDB document ObjectID "_id" field.
+Mapped to the PydanticObjectId class</li>
+</ul>
+<p>Inherited from:</p>
+<ul>
+<li>Pydantic BaseModel</li>
+<li><a href="https://roman-right.github.io/beanie/api/interfaces/aggregatemethods">UpdateMethods</a></li>
+</ul>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.insert"></a></p>
+<h3 id="documentinsert">Document.insert</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@wrap_with_actions</span><span class="p">(</span><span class="n">EventTypes</span><span class="o">.</span><span class="n">INSERT</span><span class="p">)</span>
+ <span class="o">|</span> <span class="nd">@save_state_after</span>
+ <span class="o">|</span> <span class="nd">@swap_revision_after</span>
+ <span class="o">|</span> <span class="nd">@validate_self_before</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">insert</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">link_rule</span><span class="p">:</span> <span class="n">WriteRules</span> <span class="o">=</span> <span class="n">WriteRules</span><span class="o">.</span><span class="n">DO_NOTHING</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DocType</span>
+</code></pre></div>
+<blockquote>
+<p>Insert the document (self) to the collection</p>
+<p><strong>Returns</strong>:</p>
+<p>Document</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.create"></a></p>
+<h3 id="documentcreate">Document.create</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="k">async</span> <span class="n">create</span><span class="p">(</span><span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DocType</span>
+</code></pre></div>
+<blockquote>
+<p>The same as self.insert()</p>
+<p><strong>Returns</strong>:</p>
+<p>Document</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.insert_one"></a></p>
+<h3 id="documentinsert_one">Document.insert_one</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">insert_one</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">document</span><span class="p">:</span> <span class="n">DocType</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bulk_writer</span><span class="p">:</span> <span class="s2">&quot;BulkWriter&quot;</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">link_rule</span><span class="p">:</span> <span class="n">WriteRules</span> <span class="o">=</span> <span class="n">WriteRules</span><span class="o">.</span><span class="n">DO_NOTHING</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">DocType</span><span class="p">]</span>
+</code></pre></div>
+<blockquote>
+<p>Insert one document to the collection</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>document</code>: Document - document to insert</li>
+<li><code>session</code>: ClientSession - pymongo session</li>
+<li><code>bulk_writer</code>: "BulkWriter" - Beanie bulk writer</li>
+<li><code>link_rule</code>: InsertRules - hot to manage link fields</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>DocType</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.insert_many"></a></p>
+<h3 id="documentinsert_many">Document.insert_many</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">insert_many</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">documents</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">link_rule</span><span class="p">:</span> <span class="n">WriteRules</span> <span class="o">=</span> <span class="n">WriteRules</span><span class="o">.</span><span class="n">DO_NOTHING</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">InsertManyResult</span>
+</code></pre></div>
+<blockquote>
+<p>Insert many documents to the collection</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>documents</code>: List["Document"] - documents to insert</li>
+<li><code>session</code>: ClientSession - pymongo session</li>
+<li><code>link_rule</code>: InsertRules - how to manage link fields</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>InsertManyResult</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.get"></a></p>
+<h3 id="documentget">Document.get</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">get</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">document_id</span><span class="p">:</span> <span class="n">PydanticObjectId</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ignore_cache</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">fetch_links</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">DocType</span><span class="p">]</span>
+</code></pre></div>
+<blockquote>
+<p>Get document by id, returns None if document does not exist</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>document_id</code>: PydanticObjectId - document id</li>
+<li><code>session</code>: Optional[ClientSession] - pymongo session</li>
+<li><code>ignore_cache</code>: bool - ignore cache (if it is turned on)</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>Union["Document", None]</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.find_one"></a></p>
+<h3 id="documentfind_one">Document.find_one</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">find_one</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="nb">bool</span><span class="p">],</span> <span class="o">*</span><span class="p">,</span> <span class="n">projection_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ignore_cache</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">fetch_links</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">FindOne</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">FindOne</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span>
+</code></pre></div>
+<blockquote>
+<p>Find one document by criteria.
+Returns <a href="https://roman-right.github.io/beanie/api/queries/findone">FindOne</a> query object.
+When awaited this will either return a document or None if no document exists for the search criteria.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>args</code>: *Mapping[str, Any] - search criteria</li>
+<li><code>projection_model</code>: Optional[Type[BaseModel]] - projection model</li>
+<li><code>session</code>: Optional[ClientSession] - pymongo session instance</li>
+<li><code>ignore_cache</code>: bool</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p><a href="https://roman-right.github.io/beanie/api/queries/findone">FindOne</a> - find query instance</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.find_many"></a></p>
+<h3 id="documentfind_many">Document.find_many</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">find_many</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="nb">bool</span><span class="p">],</span> <span class="o">*</span><span class="p">,</span> <span class="n">projection_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">skip</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">SortDirection</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ignore_cache</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">fetch_links</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">FindMany</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">FindMany</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span>
+</code></pre></div>
+<blockquote>
+<p>Find many documents by criteria.
+Returns <a href="https://roman-right.github.io/beanie/api/queries/findmany">FindMany</a> query object</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>args</code>: *Mapping[str, Any] - search criteria</li>
+<li><code>skip</code>: Optional[int] - The number of documents to omit.</li>
+<li><code>limit</code>: Optional[int] - The maximum number of results to return.</li>
+<li><code>sort</code>: Union[None, str, List[Tuple[str, SortDirection]]] - A key or a list of (key, direction) pairs specifying the sort order for this query.</li>
+<li><code>projection_model</code>: Optional[Type[BaseModel]] - projection model</li>
+<li><code>session</code>: Optional[ClientSession] - pymongo session</li>
+<li><code>ignore_cache</code>: bool</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p><a href="https://roman-right.github.io/beanie/api/queries/findmany">FindMany</a> - query instance</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.find"></a></p>
+<h3 id="documentfind">Document.find</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">find</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="nb">bool</span><span class="p">],</span> <span class="o">*</span><span class="p">,</span> <span class="n">projection_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">skip</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">SortDirection</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ignore_cache</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">fetch_links</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">FindMany</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">FindMany</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span>
+</code></pre></div>
+<blockquote>
+<p>The same as find_many</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.find_all"></a></p>
+<h3 id="documentfind_all">Document.find_all</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">find_all</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">skip</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">SortDirection</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">projection_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ignore_cache</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">FindMany</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">FindMany</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span>
+</code></pre></div>
+<blockquote>
+<p>Get all the documents</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>skip</code>: Optional[int] - The number of documents to omit.</li>
+<li><code>limit</code>: Optional[int] - The maximum number of results to return.</li>
+<li><code>sort</code>: Union[None, str, List[Tuple[str, SortDirection]]] - A key or a list of (key, direction) pairs specifying the sort order for this query.</li>
+<li><code>projection_model</code>: Optional[Type[BaseModel]] - projection model</li>
+<li><code>session</code>: Optional[ClientSession] - pymongo session</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p><a href="https://roman-right.github.io/beanie/api/queries/findmany">FindMany</a> - query instance</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.all"></a></p>
+<h3 id="documentall">Document.all</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="nb">all</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">projection_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">skip</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">SortDirection</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ignore_cache</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">FindMany</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">FindMany</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span>
+</code></pre></div>
+<blockquote>
+<p>the same as find_all</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.replace"></a></p>
+<h3 id="documentreplace">Document.replace</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@wrap_with_actions</span><span class="p">(</span><span class="n">EventTypes</span><span class="o">.</span><span class="n">REPLACE</span><span class="p">)</span>
+ <span class="o">|</span> <span class="nd">@save_state_after</span>
+ <span class="o">|</span> <span class="nd">@swap_revision_after</span>
+ <span class="o">|</span> <span class="nd">@validate_self_before</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">replace</span><span class="p">(</span><span class="n">ignore_revision</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bulk_writer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BulkWriter</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">link_rule</span><span class="p">:</span> <span class="n">WriteRules</span> <span class="o">=</span> <span class="n">WriteRules</span><span class="o">.</span><span class="n">DO_NOTHING</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DocType</span>
+</code></pre></div>
+<blockquote>
+<p>Fully update the document in the database</p>
+<p><strong>Arguments</strong>:</p>
+<div class="highlight"><pre><span></span><code>Used when revision based protection is turned on.
+</code></pre></div>
+<ul>
+<li><code>session</code>: Optional[ClientSession] - pymongo session.</li>
+<li><code>ignore_revision</code>: bool - do force replace.</li>
+<li><code>bulk_writer</code>: "BulkWriter" - Beanie bulk writer</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>self</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.save"></a></p>
+<h3 id="documentsave">Document.save</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="k">async</span> <span class="n">save</span><span class="p">(</span><span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">link_rule</span><span class="p">:</span> <span class="n">WriteRules</span> <span class="o">=</span> <span class="n">WriteRules</span><span class="o">.</span><span class="n">DO_NOTHING</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DocType</span>
+</code></pre></div>
+<blockquote>
+<p>Update an existing model in the database or insert it if it does not yet exist.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>session</code>: Optional[ClientSession] - pymongo session.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.save_changes"></a></p>
+<h3 id="documentsave_changes">Document.save_changes</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@saved_state_needed</span>
+ <span class="o">|</span> <span class="nd">@wrap_with_actions</span><span class="p">(</span><span class="n">EventTypes</span><span class="o">.</span><span class="n">SAVE_CHANGES</span><span class="p">)</span>
+ <span class="o">|</span> <span class="nd">@validate_self_before</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">save_changes</span><span class="p">(</span><span class="n">ignore_revision</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bulk_writer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BulkWriter</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<blockquote>
+<p>Save changes.
+State management usage must be turned on</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>ignore_revision</code>: bool - ignore revision id, if revision is turned on</li>
+<li><code>bulk_writer</code>: "BulkWriter" - Beanie bulk writer</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.replace_many"></a></p>
+<h3 id="documentreplace_many">Document.replace_many</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">replace_many</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">documents</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<blockquote>
+<p>Replace list of documents</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>documents</code>: List["Document"]</li>
+<li><code>session</code>: Optional[ClientSession] - pymongo session.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.update"></a></p>
+<h3 id="documentupdate">Document.update</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@save_state_after</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">update</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">ignore_revision</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bulk_writer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BulkWriter</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<blockquote>
+<p>Partially update the document in the database</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>args</code>: *Union[dict, Mapping] - the modifications to apply.</li>
+<li><code>session</code>: ClientSession - pymongo session.</li>
+<li><code>ignore_revision</code>: bool - force update. Will update even if revision id is not the same, as stored</li>
+<li><code>bulk_writer</code>: "BulkWriter" - Beanie bulk writer</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.update_all"></a></p>
+<h3 id="documentupdate_all">Document.update_all</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">update_all</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">dict</span><span class="p">,</span> <span class="n">Mapping</span><span class="p">],</span> <span class="o">*</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bulk_writer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BulkWriter</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UpdateMany</span>
+</code></pre></div>
+<blockquote>
+<p>Partially update all the documents</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>args</code>: *Union[dict, Mapping] - the modifications to apply.</li>
+<li><code>session</code>: ClientSession - pymongo session.</li>
+<li><code>bulk_writer</code>: "BulkWriter" - Beanie bulk writer</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>UpdateMany query</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.delete"></a></p>
+<h3 id="documentdelete">Document.delete</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="k">async</span> <span class="n">delete</span><span class="p">(</span><span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bulk_writer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BulkWriter</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">link_rule</span><span class="p">:</span> <span class="n">DeleteRules</span> <span class="o">=</span> <span class="n">DeleteRules</span><span class="o">.</span><span class="n">DO_NOTHING</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">DeleteResult</span><span class="p">]</span>
+</code></pre></div>
+<blockquote>
+<p>Delete the document</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>session</code>: Optional[ClientSession] - pymongo session.</li>
+<li><code>bulk_writer</code>: "BulkWriter" - Beanie bulk writer</li>
+<li><code>link_rule</code>: DeleteRules - rules for link fields</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>Optional[DeleteResult] - pymongo DeleteResult instance.</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.delete_all"></a></p>
+<h3 id="documentdelete_all">Document.delete_all</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">delete_all</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">bulk_writer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BulkWriter</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">DeleteResult</span><span class="p">]</span>
+</code></pre></div>
+<blockquote>
+<p>Delete all the documents</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>session</code>: Optional[ClientSession] - pymongo session.</li>
+<li><code>bulk_writer</code>: "BulkWriter" - Beanie bulk writer</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>Optional[DeleteResult] - pymongo DeleteResult instance.</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.aggregate"></a></p>
+<h3 id="documentaggregate">Document.aggregate</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">aggregate</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DocType</span><span class="p">],</span> <span class="n">aggregation_pipeline</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">projection_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ignore_cache</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span>
+ <span class="o">|</span>         <span class="n">AggregationQuery</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span>
+ <span class="o">|</span>         <span class="n">AggregationQuery</span><span class="p">[</span><span class="n">DocumentProjectionType</span><span class="p">],</span>
+ <span class="o">|</span>     <span class="p">]</span>
+</code></pre></div>
+<blockquote>
+<p>Aggregate over collection.
+Returns <a href="https://roman-right.github.io/beanie/api/queries/aggregationquery">AggregationQuery</a> query object</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>aggregation_pipeline</code>: list - aggregation pipeline</li>
+<li><code>projection_model</code>: Type[BaseModel]</li>
+<li><code>session</code>: Optional[ClientSession]</li>
+<li><code>ignore_cache</code>: bool</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p><a href="https://roman-right.github.io/beanie/api/queries/aggregationquery">AggregationQuery</a></p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.count"></a></p>
+<h3 id="documentcount">Document.count</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">count</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span>
+</code></pre></div>
+<blockquote>
+<p>Number of documents in the collections
+The same as find_all().count()</p>
+<p><strong>Returns</strong>:</p>
+<p>int</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.use_state_management"></a></p>
+<h3 id="documentuse_state_management">Document.use_state_management</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">use_state_management</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+</code></pre></div>
+<blockquote>
+<p>Is state management turned on</p>
+<p><strong>Returns</strong>:</p>
+<p>bool</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.get_saved_state"></a></p>
+<h3 id="documentget_saved_state">Document.get_saved_state</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_saved_state</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span>
+</code></pre></div>
+<blockquote>
+<p>Saved state getter. It is protected property.</p>
+<p><strong>Returns</strong>:</p>
+<p>Optional[Dict[str, Any]] - saved state</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.init_cache"></a></p>
+<h3 id="documentinit_cache">Document.init_cache</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">init_cache</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<blockquote>
+<p>Init model's cache</p>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.init_fields"></a></p>
+<h3 id="documentinit_fields">Document.init_fields</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">init_fields</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<blockquote>
+<p>Init class fields</p>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.init_settings"></a></p>
+<h3 id="documentinit_settings">Document.init_settings</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">init_settings</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">database</span><span class="p">:</span> <span class="n">AsyncIOMotorDatabase</span><span class="p">,</span> <span class="n">allow_index_dropping</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<blockquote>
+<p>Init document settings (collection and models)</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>database</code>: AsyncIOMotorDatabase - motor database</li>
+<li><code>allow_index_dropping</code>: bool</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.init_actions"></a></p>
+<h3 id="documentinit_actions">Document.init_actions</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">init_actions</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>Init event-based actions</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.init_model"></a></p>
+<h3 id="documentinit_model">Document.init_model</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">init_model</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">database</span><span class="p">:</span> <span class="n">AsyncIOMotorDatabase</span><span class="p">,</span> <span class="n">allow_index_dropping</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<blockquote>
+<p>Init wrapper</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>database</code>: AsyncIOMotorDatabase</li>
+<li><code>allow_index_dropping</code>: bool</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>None</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.get_settings"></a></p>
+<h3 id="documentget_settings">Document.get_settings</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">get_settings</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DocumentSettings</span>
+</code></pre></div>
+<blockquote>
+<p>Get document settings, which was created on
+the initialization step</p>
+<p><strong>Returns</strong>:</p>
+<p>DocumentSettings class</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.get_motor_collection"></a></p>
+<h3 id="documentget_motor_collection">Document.get_motor_collection</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">get_motor_collection</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AsyncIOMotorCollection</span>
+</code></pre></div>
+<blockquote>
+<p>Get Motor Collection to access low level control</p>
+<p><strong>Returns</strong>:</p>
+<p>AsyncIOMotorCollection</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.inspect_collection"></a></p>
+<h3 id="documentinspect_collection">Document.inspect_collection</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="k">async</span> <span class="n">inspect_collection</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientSession</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">InspectionResult</span>
+</code></pre></div>
+<blockquote>
+<p>Check, if documents, stored in the MongoDB collection
+are compatible with the Document schema</p>
+<p><strong>Returns</strong>:</p>
+<p>InspectionResult</p>
+</blockquote>
+<p><a name="beanie.odm.documents.Document.dict"></a></p>
+<h3 id="documentdict">Document.dict</h3>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nb">dict</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">include</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="s2">&quot;AbstractSetIntStr&quot;</span><span class="p">,</span> <span class="s2">&quot;MappingIntStrAny&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">exclude</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="s2">&quot;AbstractSetIntStr&quot;</span><span class="p">,</span> <span class="s2">&quot;MappingIntStrAny&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">by_alias</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">skip_defaults</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">exclude_unset</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_defaults</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">exclude_none</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;DictStrAny&quot;</span>
+</code></pre></div>
+<blockquote>
+<p>Overriding of the respective method from Pydantic
+Hides fields, marked as "hidden</p>
+</blockquote>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../tutorial/migrations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Migrations" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Migrations
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../query/" class="md-footer__link md-footer__link--next" aria-label="Next: Query" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Query
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.29db7785.min.js"></script>
+      
+    
+  </body>
+</html>
